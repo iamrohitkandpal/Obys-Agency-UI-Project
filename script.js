@@ -42,8 +42,8 @@ function loadingAnime(){
         delay:0.2,
         opacity:0
     })
-    tl.from("#hero-1 h1, #hero-2 h1, #hero-3 h2, #hero-4 h1",{
-        y:150,
+    tl.from("#hero-1 h1, #hero-2 h1, .hero h2, #hero-4 h1",{
+        y:160,
         stagger:0.2
     })
 };
