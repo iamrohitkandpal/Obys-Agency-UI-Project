@@ -9,14 +9,30 @@ html, body{
     width: 100%;
     height: 100%;
 }
+.crsr{
+    height: 2.75vw;
+    width: 2.75vw;
+    border: 1px solid rgba(255, 255, 255, 0.546);
+    border-radius: 50%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
 
 .loader{
     height: 100%;
     width: 100%;
     z-index: 999;
     position: fixed;
-    padding: 25vh 10vw;
+    padding: 26vh 6vw;
+    padding-top: 15vh;
     background-color: #0b0b0b;
+}
+#line-1st{
+    margin-left: 4vw;
 }
 .line{
     display: flex;
@@ -24,7 +40,8 @@ html, body{
     align-items: center;
     justify-content: flex-start;
     height: fit-content;
-    gap: 2vw;
+    line-height: 1.1;
+    gap: 6vw;
 }
 .line1-part1{
     display: flex;
@@ -47,14 +64,29 @@ html, body{
     text-transform: uppercase;
     font-weight: 900;
 }
+.line:nth-child(3){
+    gap: 2vw;
+}
 .line h2{
-    font-size: 5.25vw;
+    font-size: 6.75vw;
     font-family: 'Silk Serif';
     text-transform: uppercase;
     opacity: 0;
     font-weight: 900;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+.now{
+    display: flex;
+    align-items: center;
+}
+#load-para{
+    width: 100%;
+    padding: 9.5vh 0;
+    padding-left: 21vw;
+}
+.line p{
+    font-size: 1vw;
 }
 @keyframes anime {
     0%{
@@ -95,4 +127,84 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: rgb(21,20,20);
+}
+.nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    height: 8.5vw;
+    padding-bottom: 1.5;
+}
+.nav-left{
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    gap: 2.75vw;
+    width: 15%;
+}
+.nav-left i{
+    margin-top: 0.25vw;
+    font-size: 1.1vw;
+}
+.nav-center{
+    margin-top: 3vw;
+    margin-right: 25vw;
+    width: 20%;
+}
+.nav-center h3{
+    line-height: 1.1;
+    font-family: "Plain";
+    font-size: 1vw;
+    font-weight: 100;
+    width: 30%;
+}
+.nav-right{
+    display: flex;
+    width: 15%;
+    margin-right: 1vw;
+    align-items: top;
+    justify-content: center;
+    gap: 2.5vw;
+}
+.nav-right h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+.hero{
+    width: 70%;
+    margin-left: 28%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+    /* background-color: rgb(117, 190, 245); */
+}
+.hero:nth-child(2){
+    margin-top: 15vh;
+}
+.hero h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7.25vw;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 1px white;
+    font-weight: 500;
+    color: transparent;
+}
+#hero-3 h2{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7.25vw;
+}
+#hero-3 h3{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7.25vw;
 }
