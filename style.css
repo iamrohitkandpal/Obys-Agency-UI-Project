@@ -9,16 +9,14 @@ html, body{
     width: 100%;
     height: 100%;
 }
-.crsr{
-    height: 2.75vw;
-    width: 2.75vw;
-    border: 1px solid rgba(255, 255, 255, 0.546);
-    border-radius: 50%;
-    background-color: transparent;
-    position: fixed;
-    z-index: 1000;
+body{
+    overflow-x: hidden;
+}
+.mousefollower{
+    border: 15px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    scale: 1.25;
     mix-blend-mode: difference;
-    transform: translate(-50%, -50%);
 }
 
 
@@ -119,12 +117,14 @@ html, body{
     }
 }
 
+
 .main{
     position: relative;
     background-color: rgb(21,20,20);
 }
 .page1{
-    height: 100vh;
+    height: 90vh;
+    z-index: 1000;
     width: 100%;
     background-color: rgb(21,20,20);
 }
@@ -180,10 +180,9 @@ html, body{
     height: fit-content;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-y: hidden;
     position: relative;
     z-index: 1111;
-    /* background-color: rgb(117, 190, 245); */
 }
 .hero:nth-child(2){
     margin-top: 15vh;
@@ -192,10 +191,25 @@ html, body{
     font-size: 7.5vw;
     text-transform: uppercase;
     line-height: 7.25vw;
+    position: relative;
+}
+#hero-1{
+    margin-left: 0;
+    width: 69.5%;
+    text-align: right;
+    justify-content: flex-end;
+}
+#hero-1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 26.5%;
+    top: 0%;
 }
 #hero-3 h2{
     font-size: 7.5vw;
-    /* transition: all ease 0.3s; */
     border-bottom: 0.5vw solid white;
     text-transform: uppercase;
     padding-bottom: 0.75vw;
@@ -208,17 +222,19 @@ html, body{
     border-bottom: 0.5vw solid black;
 }
 
+
 .page2{
     height: 100vh;
+    z-index: 1000;
     width: 100%;
     background-color: rgb(21,20,20);
 }
 .vid{
-    height: 69vh;
-    width: 71vw;
+    height: 75vh;
+    width: 72vw;
     position: relative;
-    top: 14%;
-    left: 28.25%;
+    top: 30%;
+    left: 28%;
     background-size: cover;
     background-position: center;
     background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
@@ -238,28 +254,159 @@ html, body{
     justify-content: center;
     border-radius: 50%;
     position: absolute;
-    top: -9%;
-    right: 17%;
+    top: -10%;
+    left: 69%;
     z-index: 999;
 }
 .video-crsr i{
     font-size: 2.5vw;
 }
 
+
 .page3{
     min-height: 100vh;
-    width: 100%;
-    background-color: rgb(21,20,20);
-    position: relative;    
-}
-
-.page4{
-    min-height: 100vh;
+    z-index: 1000;
     width: 100%;
     background-color: rgb(21,20,20);
     position: relative;
-    padding: 7vh 0;
+    padding: 6.85vh;
+    margin-top: 20vh;
 }
+.page3 h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 24.5vw;
+}
+.page3 .underline{
+    margin-left: 24.5vw;
+    width: 70%;
+}
+.page3 h1:before{
+    content: "03";
+    position: absolute;
+    font-family: "Silk Serif";
+    font-style: italic;
+    left: -13%;
+    top: 7%;
+    font-weight: 500;
+    font-size: 3.25vw;
+}
+.image-div-box{
+    padding: 9.5vw 2vw;
+    padding-top: 4vw;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.olga{
+    width: 23vw;
+}
+.aim{
+    width: 31vw;
+}
+.image-div-box h2{
+    text-transform: uppercase;
+    font-size: 2.65vw;
+    margin-bottom: 2.65vw;
+}
+.img-description{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2.25vw 0;
+}
+.img-description h4{
+    line-height: 1.4;
+    font-weight: 100;
+    font-size: 1vw;
+}
+.img-underline{
+    height: 0.5px;
+    width: 100%;
+    background-color: white;
+}
+.image-box{
+    height: 29vw;
+    width: 23vw;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page3-circle{
+    height: 23vw;
+    width: 23vw;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;;
+}
+.page3-circle svg{
+    width: 33%;
+    height: 33%;
+}
+.cir-1{
+    margin-top: 54vh;
+    margin-left: 8.05vw;
+}
+.cir-2{
+    margin-top: -2vh;
+}
+.cir-3{
+    margin-top: 30vw;
+    margin-left: 8vw;
+}
+.cir-2 svg{
+    transform: rotate(-45deg);
+}
+.cir-3 svg{
+    transform: rotate(-90deg);
+}
+.circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s all ease;
+    background-color: #fff;
+    scale: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-in p{
+    transition: all 0.3s ease;
+    transition-delay: 0.5s;
+    text-align: center;
+    scale: 0;
+    color: black;
+    font-size: 1vw;
+    font-weight: 600;
+    width: 90%;
+}
+.page3-circle:hover .circle-in{
+    scale:1;
+}
+.page3-circle:hover p{
+    scale:1;
+}
+
+
 .pg-4-content{
     width: 72vw;
     margin-left: 27vw;
@@ -269,12 +416,34 @@ html, body{
     text-transform: uppercase;
     position: relative;
 }
-.pg-4-content .underline{
+.pg-4-content h1:before{
+    content: "03";
+    position: absolute;
+    font-family: "Silk Serif";
+    font-style: italic;
+    left: -13%;
+    top: 7%;
+    font-weight: 500;
+    font-size: 3.25vw;
+}
+.underline{
     height: 1px;
     width: 92%;
     background-color: white;
     margin: 5vw 0;
     margin-bottom: 4vw;
+}
+.underline-2{
+    height: 2px;
+    width: 92%;
+    background-color: white;
+    margin: 10vw 0;
+    margin-bottom: 1.5vw;
+}
+.pg-4-content span{
+    font-size: 1vw;
+    line-height: 1.45;
+    width: 25%;
 }
 .pg-4-content>p{
     font-size: 2.15vw;
@@ -323,4 +492,105 @@ html, body{
 .blue-div-elem p{
     width: 50%;
     font-size: 1vw;
+}
+
+
+.page5{
+    min-height: 100vh;
+    z-index: 1000;
+    width: 100%;
+    position: relative; 
+    margin-top: 2vw;
+}
+.page5 .elem{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7.75vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1.25px white;
+    line-height: 1.1;
+    font-weight: 100;
+    color: transparent;
+    display: inline-block;
+    margin-left: 16px;
+    animation: moving-text 20s linear infinite;
+}
+.elem span{
+    font-style: italic;
+    font-family: "Silk Serif";
+    color:transparent
+}
+.elem-rev h1{
+    transform: translateX(calc(-100% - 20px));
+    animation: moving-text 28s linear infinite reverse;
+}
+@keyframes moving-text{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+.footer{
+    height: 100vh;
+    z-index: 1000;
+    width: 100%;
+    position: relative;
+    padding-left: 27.5vw;
+}
+.footer h1{
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    width: 60vw;
+    padding-bottom: 4.15vw;
+    position: relative;
+}
+.footer h1:before{
+    content: "04";
+    position: absolute;
+    font-family: "Silk Serif";
+    font-style: italic;
+    left: -17%;
+    top: 7%;
+    font-weight: 500;
+    font-size: 3.25vw;
+}
+.footer-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:6vw 15vw 6vw 0;
+}
+.footer-content h6{
+    font-size: 1vw;
+    padding-bottom: 2.25vw;
+}
+.box{
+    width: 20%;
+}
+.footer-content h5{
+    font-size: 1.7vw;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.underline-foot{
+    height: 1.5px;
+    width: 93%;
+    margin-top: 1.5vw;
+    background-color: white;
+}
+.footer>h5{
+    font-weight: 500;
+    font-size: 1.05vw;
+    margin-top: 2vw;
+}
+
+._canvas_container{
+    z-index: 99999999 !important;
+    pointer-events: none;
 }
