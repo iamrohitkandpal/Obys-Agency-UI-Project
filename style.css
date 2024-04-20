@@ -124,7 +124,7 @@ body{
 }
 .page1{
     height: 90vh;
-    z-index: 1000;
+    /* z-index: 1000; */
     width: 100%;
     background-color: rgb(21,20,20);
 }
@@ -214,18 +214,35 @@ body{
     text-transform: uppercase;
     padding-bottom: 0.75vw;
     line-height: 7.25vw;
+    position: relative;
 }
-.hero h2:hover{
+#flag{
+    position: absolute;
+    height: 22vw;
+    opacity:0;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#hero-3 span{
+    font-size: 7.5vw;
+    border-bottom: 0.5vw solid white;
+    text-transform: uppercase;
+    padding-bottom: 0.75vw;
+    line-height: 7.25vw;
+}
+#hero-3 h2:hover{
     -webkit-text-stroke: 1px white;
     font-weight: 500;
     color: transparent;
-    border-bottom: 0.5vw solid black;
+    border-bottom: 0.5vw solid transparent;
 }
 
 
 .page2{
     height: 100vh;
-    z-index: 1000;
+    /* z-index: 1000; */
     width: 100%;
     background-color: rgb(21,20,20);
 }
@@ -543,6 +560,11 @@ body{
     position: relative;
     padding-left: 27.5vw;
 }
+.footer-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 .footer h1{
     text-transform: uppercase;
     font-size: 7.5vw;
@@ -550,7 +572,27 @@ body{
     padding-bottom: 4.15vw;
     position: relative;
 }
-.footer h1:before{
+.footer-text h2 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10%;
+    font-weight: 500;
+    left: 0;
+    font-family: "silk serif";
+}
+.footer-text svg{
+    transform: rotate(-90deg);
+    width: 5.5vw;
+    margin-bottom: 4vw;
+}
+.footer-text h2 span {
+    font-family: "silk serif";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.footer-text:before{
     content: "04";
     position: absolute;
     font-family: "Silk Serif";
@@ -594,3 +636,7 @@ body{
     z-index: 99999999 !important;
     pointer-events: none;
 }
+
+
+
+
