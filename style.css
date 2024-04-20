@@ -422,6 +422,26 @@ body{
 .page3-circle:hover p{
     scale:1;
 }
+.cir-4{
+    background-color: #FFA63D;
+    margin-top: 12.5vw;
+    position: relative;
+    transition: all 0.2s ease;
+    margin-left: 37.5%;
+}
+.cir-4 p{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.cir-4 span{
+    font-family: "Silk Serif";
+    font-style: italic;
+    font-weight: 500;
+}
+.cir-4:hover{
+    scale:0.85;
+}
 
 
 .pg-4-content{
@@ -640,3 +660,190 @@ body{
 
 
 
+@media (max-width: 600px) {
+    .page1{
+        height: 60vh;
+        padding-top: 1px;
+    }
+    .nav{
+        padding: 7.5vw 5vw;
+        height: 18.5vw;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+    }
+    .nav svg{
+        width: 17vw;
+    }
+    .nav-left{
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-left i{
+        font-size: 4.5vw;
+    }
+    .nav-center{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    
+    .hero{
+        margin-left: 5.5%;
+    }
+    .hero:nth-child(2){
+        height: 13vh;
+        margin-top: 18.5vh;
+    }
+    .hero h1{
+        font-size: 9.5vw;
+        line-height: 10vw;
+    }
+    #hero-1{
+        margin-left: 5.5%;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    #hero-1::before{
+        font-size: 4.5vw;
+        left: 0%;
+        top: 20%;
+    }
+    #hero-3 h2{
+        font-size: 9.5vw;
+        border-bottom: 1vw solid white;
+        line-height: 9.5vw;
+    }
+    #flag{
+        height: 22.5vh;
+    }
+    #hero-3 h2:hover{
+        border-bottom: 1vw solid transparent;
+    }
+    
+
+    .page2{
+        height: 60vh;
+    }
+    .vid{
+        height: 50vh;
+        width: 100vw;
+        top: 0%;
+        left: 0%;
+    }
+    .video-crsr{
+        height: 25vw;
+        width: 25vw;
+        top: -6%;
+        left: 5.5%;
+    }
+    .video-crsr i{
+        font-size: 5vw;
+    }
+
+    .page3{
+        min-height: 100vh;
+        padding: 9vh 5.5vw;
+        margin-top: 0vh;
+    }
+    .page3 h1 {
+        padding-bottom: 3vw;
+        font-size: 9vw;
+        margin-left: 0;
+    }
+    .page3 .underline{
+        margin-left: 0;
+        width: 100%;
+    }
+    .page3 h1:before{
+        content: "02";
+        left: 0%;
+        top: -60%;
+        font-size: 4.5vw;
+    }
+    .image-div-box{
+        padding: 9.5vw 0;
+        padding-top: 4vw;
+        position: relative;
+        display: flex;
+        gap: 2vw;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .olga{
+        width: 100%;
+        height: 90vh;
+    }
+    .aim{
+        width: 100%;
+        height: 90vh;
+    }
+    .image-div-box h2{
+        font-size: 6vw;
+        margin-top: 6.75vw;
+        margin-bottom: 0;
+    }
+    .img-description{
+        margin: 2.25vw 0;
+        margin-bottom: 7vw;
+    }
+    .img-description h4{
+        font-size: 3.75vw;
+    }
+    .img-underline{
+        height: 0.75px;
+    }
+    .image-box{
+        height: 63vh;
+        width: 100%;
+        margin: 6vw 0;
+    }
+    .page3-circle{
+        height: 23vw;
+        width: 23vw;
+        border-radius: 50%;
+        position: relative;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;;
+    }
+    .page3-circle svg{
+        width: 33%;
+        height: 33%;
+    }
+    .cir-1{
+        display: none;
+    }
+    .cir-2{
+        display: none;
+    }
+    .cir-3{
+        display: none;
+    }
+    .cir-4{
+        background-color: #FFA63D;
+        margin-top: 12.5vw;
+        position: relative;
+        transition: all 0.2s ease;
+        margin-left: 37.5%;
+    }
+    .cir-4 p{
+        text-align: center;
+        font-size: 1vw;
+        font-weight: 600;
+    }
+    .cir-4 span{
+        font-family: "Silk Serif";
+        font-style: italic;
+        font-weight: 500;
+    }
+    .cir-4:hover{
+        scale:0.85;
+    }
+}
