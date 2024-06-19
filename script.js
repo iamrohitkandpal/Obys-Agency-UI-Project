@@ -244,21 +244,6 @@ function footerAnime(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 locomotive();
 loadingAnime();
 cursorAnime();
